@@ -1,12 +1,5 @@
 <section class="hero">
-
-  <div class="hero-image">
-    <img 
-      src="./Desktop - 3.png"
-      alt="Ovo"
-    >
-  </div>
-
+  <img src="./Desktop - 3.png" alt="Ovo" class="egg">
 </section>
 
 <style>
@@ -19,35 +12,25 @@
   .hero {
     width: 100%;
     height: 100vh;
-    background: #ffffff;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
+    background: #fff;
     overflow: hidden;
   }
 
-  .hero-image {
-    width: 820px;
-    height: 820px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .hero-image img {
-    width: 100%;
-    height: 100%;
+  .egg {
+    width: min(820px, 80vw);
+    height: auto;
 
     object-fit: contain;
   }
 
   @media (max-width: 768px) {
-    .hero-image {
+    .egg {
       width: 300px;
-      height: 300px;
     }
   }
 </style>
